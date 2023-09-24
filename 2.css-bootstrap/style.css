@@ -2,19 +2,100 @@
   position: relative;
 }
 
+/*  HEADER  */
+
 .header {
   padding: 18px 0px;
   height: 197px;
+  font-family: "Rubik", sans-serif;
 }
+
+.header__logo {
+  width: 128px;
+}
+
+.input, .header__btn {
+  height: 40px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.sign-in {
+  border: 1.5px solid #FDD446;
+}
+
+.sign-up {
+  background: #FDD446;
+}
+
+.input {
+  border-radius: 57.595px;
+  border: 1px solid rgba(0, 0, 0, 0.50);
+}
+
+.header__input:focus {
+  position: absolute;
+  width: 568px;
+  height: 51px;
+  padding-top: 0.75rem;
+  top: -20px;
+  font-size: 24px;
+  font-weight: 400;
+
+  outline: 0px;
+  border: 1px solid rgba(0, 0, 0, 0.50);
+
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: none;
+
+  background: #FFF;
+}
+
+.input__label.active {
+  padding-top: 1.5rem;
+}
+
+.datalist {
+  display: none;
+  width: 568px;
+  top: 51px;
+
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.50);
+  background: #FFF;
+
+  border-top: none;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  z-index: 10;
+}
+
+.datalist.active {
+  display: flex;
+}
+
+.datalist__option:hover {
+  background: #FEF6D6;
+  cursor: pointer;
+}
+
+.header__select {
+  appearance: none;
+  -webkit-appearance: none !important;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.50);
+}
+
+/*  MAIN  */
+
 .main {
   height: 2916px;
   overflow: hidden;
-}
-.footer {
-  height: 310px;
-  background-color: #FDD446;
-  font-size: 18px;
-  line-height: 24px;
 }
 
 .background__round {
@@ -61,6 +142,28 @@
   right: 9px;
 }
 
+.card {
+
+}
+
+.pagination_page.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FDD446;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+/*  FOOTER  */
+
+.footer {
+  height: 310px;
+  background-color: #FDD446;
+  font-size: 18px;
+  line-height: 24px;
+}
 .divider {
   display: flex;
   width: 100%;

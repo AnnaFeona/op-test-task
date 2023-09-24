@@ -6,10 +6,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet"> -->
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
@@ -17,20 +13,72 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="container">
-  </div>
+  <!-- ------------ HEADER -------------- -->
   <header class="header">
     <div class="container px-2">
-      <div class="row">
-        <div class="col-3">
+      <div class="row pb-5">
+        <div class="header__logo ps-2">
           <img src="./assets/img/logo.png" alt="logo" width="128">
         </div>
-        <div class="col-9">search</div>
+        <div class="col navbar mx-4">
+          <div class="col-12 col-md-6 pe-3">
+            <div class="input__container position-relative">
+              <img class="input__label position-absolute top-50 translate-middle ps-5 z-2" src="./assets/img/search_icon.png" alt="search_icon">
+              <input class="input header__input ps-5" list="datalistOptions" id="exampleDataList" placeholder="Поиск">
+            </div>
+            <div class="list-group datalist position-absolute fw-bold fs-4 pt-2">
+              <div class="datalist__option list-group-item border-0 list-group-item-action pt-2 ms">
+                <img src="./assets/img/ivleeva_avatar.png" alt="avatar">
+                <span class="ps-1">Анастасия Ивлеева</span>
+              </div>
+              <div class="datalist__option list-group-item border-0 list-group-item-action">
+                <img src="./assets/img/zadorojnaja_avatar.png" alt="avatar">
+                <span class="ps-1">Анастасия Задорожная</span>
+              </div>
+              <div class="datalist__option list-group-item border-0 list-group-item-action pt-2">
+                <img src="./assets/img/makeeva_avatar.png" alt="avatar">
+                <span class="ps-1">Анастасия Макеева</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 pe-3">
+            <button class="btn header__btn sign-in fw-bold text-center border-1">Вход</button>
+          </div>
+          <div class="col-md-3">
+            <button class="btn header__btn sign-up fw-bold text-center">Регистрация</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3 pt-1 position-relative">
+          <select class="header__select w-100 form-select-sm fs-6">
+            <option selected value="filters">Фильтры</option>
+          </select>
+          <div class="arrow__btn position-absolute top-50 end-0 translate-middle pe-3">
+            <img class="user-select-all" src="./assets/img/arrow.png" alt="arrow">
+          </div>
+        </div>
+        <div class="col-6 position-relative">
+          <img class="input__label position-absolute top-50 translate-middle ps-5" src="./assets/img/search_icon.png" alt="search_icon">
+          <input class="input ps-5" list="datalistOptions" id="exampleDataList" placeholder="Поиск">
+        </div>
+        <div class="col-3 pt-1 position-relative">
+          <select class="header__select w-100 form-select-sm fs-6">
+            <option selected>По умолчанию</option>
+          </select>
+          <div class="arrow__btn position-absolute top-50 end-0 translate-middle pe-3">
+            <img class="user-select-all" src="./assets/img/arrow_vector.png" alt="arrow">
+          </div>
+        </div>
       </div>
     </div>
+
     <div class="background__round top_left"></div>
   </header>
 
+  <!-- ----------- MAIN ---------------- -->
   <main class="main">
     <div class="background__round center_right"></div>
     <div class="background__round bottom_center"></div>
@@ -38,8 +86,26 @@
     <div class="background__star top_right"></div>
     <div class="background__star bottom_right"></div>
 
+    <div class="container"></div>
+    <div class="main_pagination py-5">
+      <div class="row flex-row justify-content-center">
+        <div class="col-4 fw-bold">
+          <div class="row justify-content-center align-items-center align-content-center">
+            <div class="col">«</div>
+            <div class="col pagination_page active">1</div>
+            <div class="col pagination_page">2</div>
+            <div class="col pagination_page">3</div>
+            <div class="col pagination_page">4</div>
+            <div class="col pagination_page">5</div>
+            <div class="col pagination_page">»</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </main>
 
+  <!-- --------- FOOTER --------------- -->
   <footer class="footer">
     <div class="container py-4">
       <div class="row mx-3 flex-row justify-content-between">
@@ -89,5 +155,6 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
