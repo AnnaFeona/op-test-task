@@ -112,12 +112,14 @@
   top: 129px;
   left: -265px;
 }
+
 .center_right {
   width: 554px;
   height: 509px;
   top: 935px;
   right: -375px;
 }
+
 .bottom_center {
   width: 768px;
   height: 705.306px;
@@ -125,16 +127,19 @@
   top: 2698px;
   left: 0;
 }
+
 .background__star {
   background-image: url(./assets/img/star.png);
   position: absolute;
 }
+
 .top_right {
   width: 16.565px;
   height: 15.409px;
   top: 1565px;
   right: 6px;
 }
+
 .bottom_right {
   width: 43px;
   height: 40px;
@@ -142,6 +147,9 @@
   right: 9px;
 }
 
+.card__padding {
+  padding-bottom: 7px;
+}
 .card__description {
   font-size: 14px;
   line-height: 17px;
