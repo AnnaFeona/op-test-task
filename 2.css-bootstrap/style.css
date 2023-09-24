@@ -6,7 +6,7 @@
 
 .header {
   padding: 18px 0px;
-  height: 197px;
+  height: 180px;
   font-family: "Rubik", sans-serif;
 }
 
@@ -94,7 +94,7 @@
 /*  MAIN  */
 
 .main {
-  height: 2916px;
+  height: 2933px;
   overflow: hidden;
 }
 
@@ -142,8 +142,32 @@
   right: 9px;
 }
 
-.card {
+.card__description {
+  font-size: 14px;
+  line-height: 17px;
+}
+.card_avatar__checked {
+  color: #F90;
+  font-family: Rubik;
+  font-size: 11px;
+  font-weight: 400;
+}
 
+.rare-amount {
+  font-size: 11px;
+  border-radius: 7px;
+  border: 1px solid #FFC107;
+}
+
+.price-amount {
+  font-size: 11px;
+  border-radius: 7px;
+  background: #FDD446;
+}
+
+.buy__btn {
+  border-radius: 15px;
+background: linear-gradient(90deg, #FDD446 0%, #F69B47 100%);
 }
 
 .pagination_page.active {
@@ -164,14 +188,17 @@
   font-size: 18px;
   line-height: 24px;
 }
+
 .divider {
   display: flex;
   width: 100%;
   border: 0.5px solid rgba(0, 0, 0, 0.50);
 }
+
 .footer__star {
   top: -23px;
 }
+
 .footer__copyright {
   font-family: "Rubic", sans-serif;
 }

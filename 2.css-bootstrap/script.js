@@ -2,7 +2,6 @@
 
 const headerInput = document.querySelector('.header__input');
 const headerInputDatalist = document.querySelector('.datalist');
-console.log(headerInput);
 
 headerInput.addEventListener('focus', () => {
   headerInputDatalist.classList.add('active');
