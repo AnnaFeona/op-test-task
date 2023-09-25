@@ -55,11 +55,15 @@ const card = `<div class="card__container border">
 </div>`;
 
 const cardContainer = document.querySelector('#search-results');
-cardContainer.innerHTML = '';
-for (let i = 0; i < 18; i ++) {
-  const newCard = document.createElement('div');
-  newCard.classList.add('col-6', 'col-md-4', 'col-lg-3', 'px-3', 'pt-3', 'card__padding');
-  newCard.innerHTML = card;
+renderSearchResults(cardContainer);
 
-  cardContainer.append(newCard);
+function renderSearchResults(parent) {
+  parent.innerHTML = '';
+  for (let i = 0; i < 18; i ++) {
+    const newCard = document.createElement('div');
+    newCard.classList.add('col-6', 'col-md-4', 'col-lg-3', 'px-3', 'pt-3', 'card__padding');
+    newCard.innerHTML = card;
+
+    parent.append(newCard);
+  }
 }

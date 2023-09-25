@@ -148,7 +148,7 @@
 }
 
 .card__padding {
-  padding-bottom: 7px;
+  padding-bottom: 6.5px;
 }
 .card__description {
   font-size: 14px;
@@ -178,6 +178,9 @@
 background: linear-gradient(90deg, #FDD446 0%, #F69B47 100%);
 }
 
+.main_pagination {
+  padding-top: 15px;
+}
 .pagination_page.active {
   display: flex;
   align-items: center;
